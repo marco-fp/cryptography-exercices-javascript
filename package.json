@@ -5,7 +5,6 @@
   "main": "crypto.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jshint": "jshint index.js modular_arithmetic/*.js",
     "start": "node crypto.js"
   },
   "repository": {
@@ -17,9 +16,6 @@
   ],
   "author": "Marco Fernandez Pranno",
   "license": "MIT",
-  "devDependencies": {
-    "jshint": "^2.9.4"
-  },
   "bugs": {
     "url": "https://github.com/MarFerPra/cryptography-exercices/issues"
   },
