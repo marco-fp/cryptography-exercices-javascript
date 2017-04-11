@@ -1,0 +1,27 @@
+{
+  "name": "cryptography-exercices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crypto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jshint": "jshint index.js modular_arithmetic/*.js",
+    "start": "node crypto.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarFerPra/cryptography-exercices.git"
+  },
+  "keywords": [
+    "crypto"
+  ],
+  "author": "Marco Fernandez Pranno",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.9.4"
+  },
+  "bugs": {
+    "url": "https://github.com/MarFerPra/cryptography-exercices/issues"
+  },
+  "homepage": "https://github.com/MarFerPra/cryptography-exercices#readme"
+}
