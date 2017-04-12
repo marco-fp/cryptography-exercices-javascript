@@ -10,3 +10,7 @@ console.log("(273, 33): ", ma.EuclideanAlgorithm(273, 33));
 
 console.log("Extended Euclidean algorithm: ");
 console.log("(4864, 3458): ", ma.ExtendedEuclideanAlgorithm(4864, 3458));
+
+console.log("Mod pow modulus: ");
+console.log("pow(10,9) mod 3: ", ma.modPowSimple(10, 9, 3));
+console.log("pow(10,9) mod 3: ", ma.modPowEfficient(10, 9, 3));
