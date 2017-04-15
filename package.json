@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/MarFerPra/cryptography-exercices/issues"
   },
-  "homepage": "https://github.com/MarFerPra/cryptography-exercices#readme"
+  "homepage": "https://github.com/MarFerPra/cryptography-exercices#readme",
+  "dependencies": {
+    "big.js": "^3.1.3",
+    "bignumber.js": "^4.0.1"
+  }
 }
