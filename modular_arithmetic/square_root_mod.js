@@ -36,7 +36,7 @@ const sqrtMod = (intNum, prime) => {
   return null;
 }
 
-const lookForB = (p) {
+const lookForB = (p) => {
   for(let b = new BigNumber(0); b < p; b = b.plus(1)){
     if(jacobi(b, p).equals(-1)){
       return b;

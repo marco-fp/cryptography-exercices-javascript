@@ -3,6 +3,7 @@ const modPow = require('./modPow');
 const millerRabin = require('./millerRabin');
 const babyStepGiantStep = require('./babyStepGiantStep');
 const jacobi = require('./jacobi');
+const squareRootMod = require('./square_root_mod');
 
 
 module.exports = {
@@ -10,5 +11,6 @@ module.exports = {
   modPow,
   millerRabin,
   babyStepGiantStep,
-  jacobi
+  jacobi,
+  squareRootMod
 };
