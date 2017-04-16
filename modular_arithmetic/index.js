@@ -4,6 +4,7 @@ const millerRabin = require('./millerRabin');
 const babyStepGiantStep = require('./babyStepGiantStep');
 const jacobi = require('./jacobi');
 const squareRootMod = require('./square_root_mod');
+const fermatFactor = require('./fermatFactor');
 
 
 module.exports = {
@@ -12,5 +13,6 @@ module.exports = {
   millerRabin,
   babyStepGiantStep,
   jacobi,
-  squareRootMod
+  squareRootMod,
+  fermatFactor
 };

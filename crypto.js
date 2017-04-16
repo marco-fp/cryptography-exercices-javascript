@@ -22,3 +22,5 @@ console.log("Miller rabin for 28564333765949:", ma.millerRabin(28564333765949, 1
 console.log("Miller rabin for 123456789101119:", ma.millerRabin(123456789101119, 10));
 
 console.log("Baby step Giant Step: ", ma.babyStepGiantStep(3, 2, 29));
+
+console.log("Fermat factor of 5959:", ma.fermatFactor(5959));
