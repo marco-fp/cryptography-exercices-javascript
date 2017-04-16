@@ -1,7 +1,11 @@
-const BigNumber = require('bignumber.js');
-/*
-* https://en.wikipedia.org/wiki/Baby-step_giant-step
+const BigNumber = require('bignumber.js'); 
+/* 
+ * https://en.wikipedia.org/wiki/Baby-step_giant-step
 */
+
+// INPUT: (a: generator, n: order, b: element)
+// OUTPUT: Value x satisfying a^x = b
+
 module.exports = function (generator, order, element) {
 
   const n = new BigNumber(order);
