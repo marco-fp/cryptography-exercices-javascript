@@ -19,7 +19,7 @@ module.exports = function (generator, order, element) {
     entryTable[aToJ] = j;
   }
 
-  const aToMinusM = a.toPower(m.neg());
+  const aToMinusM = a.toPower(m.neg()).modulo(a);
   let y = new BigNumber(element);
 
   for(let i = new BigNumber(0); i < m; i = i.plus(1)){
