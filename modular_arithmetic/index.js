@@ -5,7 +5,7 @@ const babyStepGiantStep = require('./babyStepGiantStep');
 const jacobi = require('./jacobi');
 const squareRootMod = require('./square_root_mod');
 const fermatFactor = require('./fermatFactor');
-
+const pollardFactor = require('./pollardFactor');
 
 module.exports = {
   euclideanAlgs,
@@ -14,5 +14,6 @@ module.exports = {
   babyStepGiantStep,
   jacobi,
   squareRootMod,
-  fermatFactor
+  fermatFactor,
+  pollardFactor
 };
