@@ -1,32 +1,32 @@
-const BigNumber = require('bignumber.js'); 
+const BigNumber = require('bignumber.js');
 /* 
  * https://en.wikipedia.org/wiki/Baby-step_giant-step
 */
 
-// INPUT: (a: generator, n: order, b: element)
-// OUTPUT: Value x satisfying a^x = b
+// OUTPUT: Log base n, of a, modulus b
 
-module.exports = function (generator, order, element) {
+module.exports = function (modulus, base, number) {
 
-  const n = new BigNumber(order);
-  const a = new BigNumber(generator);
+  const n = new BigNumber(modulus);
+  const a = new BigNumber(base);
+  const elem = new BigNumber(number);
   let m = n.sqrt().ceil();
 
-  let entryTable = {};
+  let entryTable = {elem: 0};
 
   for( let j = new BigNumber(0); j < m; j = j.plus(1)){
-    let aToJ = a.toPower(j);
+    let aToJ = elem.times(a).modulo(n);
     entryTable[aToJ] = j;
   }
 
-  const aToMinusM = a.toPower(m.neg()).modulo(a);
-  let y = new BigNumber(element);
+  const aToMinusM = a.toPower(m).modulo(n);
+  let y = aToMinusM;
 
   for(let i = new BigNumber(0); i < m; i = i.plus(1)){
     if(entryTable[y]){
-      return (i.times(m).plus(entryTable[y]));
+      return (i.times(m).minus(entryTable[y]));
     }
-    y = y.times(aToMinusM);
+    y = y.times(aToMinusM).modulo(n);
   }
 
   return null;

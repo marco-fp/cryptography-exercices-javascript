@@ -7,14 +7,14 @@ const BigNumber = require('bignumber.js');
 
 const modPow = function(base, exp, mod){
 
-  if(base > mod || exp < 0 || exp > mod){
+  if(exp < 0){
     throw new Error("ModPow: Wrong arguments.");
   }
 
   if(exp === 1) return new BigNumber(base);
 
-  let b = new BigNumber(base);
-  let e = new BigNumber(exp);
+  let b = new BigNumber(base).modulo(mod);
+  let e = new BigNumber(exp).modulo(mod);
   let result = new BigNumber(1);
   let binaryExp = revertString(e.toString(2));
 
